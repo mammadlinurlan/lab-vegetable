@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: grey;
+    
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+
+.navTop{
+    height: 30px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    
+
+
+}
+
+.navTop p{
+    font-size: 13px;
+}
+
+.navBottom{
+    height: 70px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.vegefoods a{
+    font-size: 25px;
+    font-weight: bolder;
+    color: green;
+}
+
+.links{
+    width:440px ;
+}
+
+.links>ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    font-size: 15px;
+    
+}
+
+.subLinks{
+    position: absolute;
+    top: 102px;
+    list-style: none;
+    font-size: 18px;
+    background-color: white;
+    
+}
+
+.subLinks>ul{
+    display: none;
+    transition: 1s;
+}
+
+.subLinks li{
+    list-style: none;
+}
+
+
+
+.links  li:nth-child(2):hover .subLinks>ul{
+    display: block;
+    
+}
+
+
+   
+
+
+.image {
+    background-image: url(https://preview.colorlib.com/theme/vegefoods/images/xbg_1.jpg.pagespeed.ic.CriyRQ4w7N.webp);
+    height: 653px;
+
+    background-position: center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    
+
+
+}
+
+.image::after{
+    content: "";
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0; 
+    background: rgba(0,0,0,0.1);
+    pointer-events: none;
+  
+}
+
+.info p:nth-child(1){
+    font-size: 80px;
+}
+
+button:hover{
+    opacity: 30%;
+}
+
+button{
+    transition: 1s;
+}
+
+    
