@@ -62,37 +62,39 @@ a{
     
 }
 
-.subLinks{
+  .subLinks{
     position: absolute;
-    top: 102px;
+    top: 74px;
     list-style: none;
     font-size: 18px;
     background-color: white;
-    
-}
-
-.subLinks>ul{
+    padding: 10px;
     display: none;
-    transition: 1s;
-}
+    
+} 
+
+
 
 .subLinks li{
     list-style: none;
-}
-
-
-
-.links  li:nth-child(2):hover .subLinks>ul{
-    display: block;
+    padding: 5px;
     
-}
+} 
 
 
+ 
+.links  li:nth-child(2):hover .subLinks{
+    display: block;
+    transition-duration: 1s;
+    
+} 
+ 
    
 
 
 .image {
-    background-image: url(https://preview.colorlib.com/theme/vegefoods/images/xbg_1.jpg.pagespeed.ic.CriyRQ4w7N.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)),
+    url(https://preview.colorlib.com/theme/vegefoods/images/xbg_1.jpg.pagespeed.ic.CriyRQ4w7N.webp);
     height: 653px;
 
     background-position: center;
@@ -109,15 +111,6 @@ a{
 
 }
 
-.image::after{
-    content: "";
-    position: fixed;
-    top: 0; bottom: 0; left: 0; right: 0; 
-    background: rgba(0,0,0,0.1);
-    pointer-events: none;
-  
-}
-
 .info p:nth-child(1){
     font-size: 80px;
 }
@@ -130,4 +123,20 @@ button{
     transition: 1s;
 }
 
+.shop{
+    position: relative;
+}
+
+ul li ul li{
+    transition: 1s;
+}
+
+ul li ul li:hover{
+    background-color: black;
     
+}
+
+ul li ul li:hover a{
+    color: white;
+    
+}
