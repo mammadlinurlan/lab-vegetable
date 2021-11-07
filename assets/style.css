@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: grey;
+    background-color: #dff9fb;
     
 }
 
@@ -21,11 +21,13 @@ a{
 
 .navTop{
     height: 30px;
-    background-color: green;
+    background-color: #A3CB38;
     display: flex;
     align-items: center;
     justify-content: space-around;
     color: white;
+    
+    
     
 
 
@@ -41,13 +43,15 @@ a{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: sticky;
 
 }
 
 .vegefoods a{
     font-size: 25px;
     font-weight: bolder;
-    color: green;
+    color: #A3CB38;
+    font-family: 'Questrial', sans-serif;
 }
 
 .links{
@@ -64,7 +68,7 @@ a{
 
   .subLinks{
     position: absolute;
-    top: 74px;
+    top: 40px;
     list-style: none;
     font-size: 18px;
     background-color: white;
@@ -85,14 +89,14 @@ a{
  
 .links  li:nth-child(2):hover .subLinks{
     display: block;
-    transition-duration: 1s;
+    
     
 } 
  
    
 
 
-.image {
+#Introduce .image {
     background-image: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.5)),
     url(https://preview.colorlib.com/theme/vegefoods/images/xbg_1.jpg.pagespeed.ic.CriyRQ4w7N.webp);
     height: 653px;
@@ -111,8 +115,19 @@ a{
 
 }
 
-.info p:nth-child(1){
+.image .info p:nth-child(1){
     font-size: 80px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.image .info p:nth-child(2){
+    font-size: 80px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.image .info p:nth-child(3){
+   
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 button:hover{
@@ -121,6 +136,8 @@ button:hover{
 
 button{
     transition: 1s;
+    border: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .shop{
@@ -128,7 +145,8 @@ button{
 }
 
 ul li ul li{
-    transition: 1s;
+    transition: 0.5s;
+    transition-timing-function: linear;
 }
 
 ul li ul li:hover{
@@ -139,4 +157,118 @@ ul li ul li:hover{
 ul li ul li:hover a{
     color: white;
     
+}
+
+
+
+.title>p{
+    font-size: 15px;
+    padding-top: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.desc>p{
+    font-size: 13px;
+    padding-top: 15px;
+    opacity: 70%;
+}
+
+.shopInfos{
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.shopInfos .info{
+    text-align: center;
+}
+
+.shopInfos .info .icon{
+    width: 150px;
+    height: 150px;
+    background-color: #e74c3c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.6s;
+    transition-timing-function: ease-in-out;
+    border-radius: 50%;
+}
+
+.shopInfos .info .icon i{
+    font-size: 45px;
+    color: #dfe6e9;
+}
+
+.shopInfos .info .icon:hover{
+    background-color: #a29bfe;
+    transform: scale(1.2);
+}
+
+#Shopping .shopping{
+    height: 615px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#Shopping .shopping .image ,#Shopping .shopping .shopArea{
+    width: 400px;
+    height: 280px;
+    position: relative;
+    
+}
+
+#Shopping .shopping .shopArea{
+    text-align: center;
+}
+#Shopping .shopping .shopArea p ,#Shopping .shopping .shopArea form{
+    padding-top: 15px;
+}
+
+
+
+
+#Shopping .shopping .image a{
+    width: 100px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    position: absolute;
+    bottom: 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+
+#Shopping .shopping .image img{
+    width: 100%;
+    height: 100%;
+}
+
+#Shopping .shopping .image{
+    transition: 0.5s;
+    transition-timing-function: ease-in-out;
+}
+
+#Shopping .shopping .image:hover {
+    transform: scale(1.1);
+    box-shadow: 3px 4px 4px black;
+
+}
+
+#Shopping .shopping .image a{
+    transition: 0.325s;
+    transition-timing-function: ease-in-out;
+}
+
+#Shopping .shopping .image a:hover {
+    background-color: red;
+
 }
