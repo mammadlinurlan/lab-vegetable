@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #dff9fb;
+    background-color: #ffffff;
     
 }
 
@@ -161,13 +161,13 @@ ul li ul li:hover a{
 
 
 
-.title>p{
+#Shopping .title>p{
     font-size: 15px;
     padding-top: 10px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.desc>p{
+#Shopping .desc>p{
     font-size: 13px;
     padding-top: 15px;
     opacity: 70%;
@@ -320,7 +320,7 @@ ul li ul li:hover a{
     background-color: white;
     margin: 20px;
     text-align: center;
-    border: 0.5px solid #7f8c8d;
+    border: 0.5px solid #dfe4ea;
     overflow: hidden;
     transition: 0.4s;
     transition-timing-function: ease-in-out;
@@ -386,4 +386,76 @@ box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 0px 0px 8px
  box-shadow: 0px 3px 15px 5px #000000;
 }
 
+#dealOfDay{
+    height: 700px;
+}
+
+#dealOfDay .image{
+    height: 600px;
+    margin-top: 70px;
+    background-image: url(https://preview.colorlib.com/theme/vegefoods/images/xbg_3.jpg.pagespeed.ic.PrJrFBKJyM.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+#dealOfDay .image img{
+    height: 100%;
+    width: 100%;
+
+}
+
+#dealOfDay .image .priceInfo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(0%,-50%);
+}
+
+.priceInfo{
+    width: 550px;
+}
+
+.priceInfo .title>p{
+    font-size: 20px;
+    font-family: 'Shadows Into Light', cursive;
+    color: #A3CB38;
+    margin: bottom 15px; ;
+}
+
+.priceInfo .secondTitle>h1{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+    font-weight: bolder;
+}
+
+.priceInfo .desc>p{
+    opacity: 80%;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.priceInfo .linkTitle>a{
+    font-size: 40px;
+    font-family: 'Shadows Into Light', cursive;
+    color: #A3CB38;
+    margin-top: 25px;
+    transition: 0.3s;
+    transition-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.priceInfo .price>p{
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    opacity: 70%;
+    margin-top: 15px;
+}
+
+.priceInfo .linkTitle>a:hover{
+    color: black;
+}
 
